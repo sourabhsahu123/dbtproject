@@ -8,6 +8,6 @@ SELECT "id" AS listing_id,
 "host_id",
 "property_type",
 "room_type",
-"price",
+RIGHT("price",LEN("price")-1) AS Price,
 "review_scores_value"
 FROM dim_listings
